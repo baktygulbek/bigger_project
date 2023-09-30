@@ -4,7 +4,7 @@ async function saveMeetups(req, res) {
     if (req.method === 'POST') {
         const data = req.body
 
-        const {title, image, address, description} = data
+        // const {title, image, address, description} = data
 
         const client = await MongoClient.connect(
             "mongodb+srv://baktygul:4646@cluster0.ruc6vxy.mongodb.net/meetups?retryWrites=true&w=majority")
